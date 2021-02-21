@@ -1,0 +1,40 @@
+/*------------------PROJECTS------------------- */
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+ }
+ 
+.images-container {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+.projPictures {
+
+    @include sizes(300px, auto);
+    // width: 300px;
+    // height: auto;
+    margin-top: 5px;
+    margin: 10px;
+
+    &:hover {
+        transition: 500ms linear;
+        transform: scale(1.2,1.2);
+        animation-name: textMenu;
+        animation-duration: 2s;
+    }
+    img{
+        @include sizes(100%, 90%);
+    //     width: 100%;
+    //     height: 90%;
+     }
+
+    }
+}
+
+
+@keyframes textMenu {
+from {background-color: $color-red;}
+to {background-color: yellow;}
+}

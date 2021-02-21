@@ -1,0 +1,50 @@
+/* -----------------nav bar ----------------*/
+.header-Container {
+    background-color: $color-black;
+    /* height: 70px; */
+}
+
+.header-Container__marcaJavier {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    letter-spacing: 1px;
+    color: $color-white;
+    width: 20%;
+    float: left;
+    margin: 15px 0 0 60px;
+
+    &--iconorojo {
+        color: $color-red;
+    }
+}
+.header-Container__navBar {
+
+    /* width: 40%; */
+    float: right;
+    padding: 25px 0 0 0;
+
+    a {
+            color: $color-white;
+            text-decoration: none;
+            background-color: none;
+            padding: 12px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            border-radius: 5px;
+        }
+}
+
+.header-Container__navBar--button {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 -2px ;
+}
+
+
+.disabled {
+    background-color: $color-red;
+    padding: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 5px;
+}

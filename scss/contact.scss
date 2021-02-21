@@ -1,0 +1,14 @@
+/* ----------------CONTACT------------------ */
+.contact_container {
+    display: flex;
+    justify-content: center;
+
+    /* flex-direction: column; */
+   
+}
+.form_container{
+    @extend.contact_container;
+    padding-top: 20px;
+    // display: flex;
+    // justify-content: center;
+}
