@@ -47,35 +47,67 @@
         <div class="contact_container">
           <h3>Let me know if you have a question or want to work together</h3>
         </div>
-        <div class="form_container">
-          <form action="" method="get">
-            <label for="email">Email</label>
-            <input type="email" name="ejemplo mail" placeholder="ejemplo@correo.com" id="">
-            <br><!---borrar -->
-            <br><!---borrar -->
-            <input type="text" name="ejemplo mail" placeholder="Name" id="">
-            <br><!---borrar -->
-            <br><!---borrar -->
 
-            <input type="email" name="contraseña" placeholder="Enter email" id="">
-            <br><!---borrar -->
-            <br><!---borrar -->
-            <label for="texto">Coments</label>
-            <br><!---borrar -->
-            <textarea placeholder="Message" name=""" cols=" 30" rows="10"></textarea>
-            <br><!---borrar -->
+        <div class="form_container">
+
+          <form class="needs-validation" novalidate>
+
+            <div class="form-group">
+              <label for="formName"></label>
+              <div class="col-sm-10 col-lg-12">
+              <input type="text" class="form-control form-control-lg" id="formName" placeholder="Name" required>
+            </div>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            </div>
+
+            <div class="form-group">
+              <label for="formEmail"></label>
+              <div class="col-sm-10 col-lg-12">
+              <input type="email" class="form-control form-control-lg" id="formEamil" placeholder="Email" required>
+            </div>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            </div>
+            
+         
+            <div class="input-group messageBox">
+              <div class="col-sm-10 col-lg-12">
+              <textarea placeholder="Message" class="form-control form-control-lg" aria-label="With textarea" required></textarea>
+            </div>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            </div>
+         
+
+            <!-- <textarea placeholder="Message" name="" cols=" 30" rows="10"></textarea>
+          -->
 
             <fieldset>
+              <div class="col-sm-10 col-lg-12">
               <legend>How can I help you?</legend>
-              <input type="radio" name="Trabajar" value="Trajar juntos" id="">Work togehter
-              <input type="radio" name="Trabajar" value="Contratar" id="">Hire
-              <input type="radio" name="Trabajar" value="Consultoria" id="">Consulting
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline1">Work together</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline2">Hire</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline3">Consultinmg</label>
+              </div>
+            </div>
             </fieldset>
-            
-            <button type="button" data-toggle="modal" data-target="#myModal">Submit</button>
+            <div class="formButton ">
+            <button id="botonPrueba" type="submit" data-target="#myModal">Submit</button>
 
             <button type="button">Clear</button>
-
+            </div>
 
             <!-- The Modal -->
             <div class="modal" id="myModal">
@@ -133,7 +165,32 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
   </script>
-
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function() {
+    'use strict';
+    window.addEventListener('load', function() {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+          console.log("pase por aquie");
+        }, false);
+        
+      });
+      
+    }, false);document.getElementById("botonPrueba").setAttribute("data-toggle", "modal");
+    
+  })();
+  </script>
 </body>
+
+
 
 </html>
