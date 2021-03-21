@@ -1,7 +1,10 @@
 /* -----------------nav bar ----------------*/
 .header-Container {
-    background-color: $color-black;
+    // background-color: $color-black;
+    background-image:linear-gradient(black, rgba(255,0,0,0));
     /* height: 70px; */
+    z-index: 2;
+
 }
 
 .header-Container__marcaJavier {
@@ -12,6 +15,8 @@
     width: 20%;
     float: left;
     margin: 15px 0 0 60px;
+    // background-image: linear-gradient(to right,black,black,white);
+    z-index: 1;
 
     &--iconorojo {
         color: $color-red;

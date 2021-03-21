@@ -1,0 +1,13 @@
+.portrait{
+    margin-top: -6%;
+    z-index: -1;
+    .portrait-picture{
+        background-image: linear-gradient(to right,black,black,white);
+    }
+}
+.keyWords{
+    font-family: 'Anton', sans-serif;
+    font-size: 40px;
+    margin-top: 5%;
+    letter-spacing: 2px;
+}
