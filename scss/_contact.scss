@@ -4,6 +4,10 @@
     justify-content: center;
     padding-left: 50px;
     padding-right: 50px;
+    .contant_container--info{
+        font-size: 25px;
+        font-weight: normal;
+    }
     
 
     /* flex-direction: column; */
@@ -26,6 +30,24 @@
     .messageBox{
         margin-top: 40px;
         margin-bottom: 30px;
-         width: 400px;
+        width: 400px;
       }
+}
+.formButton{
+    padding-bottom: 100px;
+    #botonPrueba{
+        margin-top: 30px;
+        color: $color-white;
+        text-decoration: none;
+        background-color: none;
+        padding: 12px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-radius: 5px;
+        float: right;
+        background-color: $color-red;
+        border:none;
+        width: 100px;
+    }
+
 }
