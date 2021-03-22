@@ -9,7 +9,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
+    
 .projPictures {
 
     @include sizes(300px, auto);
@@ -17,12 +17,14 @@
     // height: auto;
     margin-top: 5px;
     margin: 10px;
-
+    
+    
     &:hover {
         transition: 500ms linear;
         transform: scale(1.2,1.2);
         animation-name: textMenu;
-        animation-duration: 2s;
+        animation-duration: 2s;   
+        
     }
     img{
         @include sizes(100%, 90%);
@@ -31,10 +33,24 @@
      }
 
     }
+    .ProjectName{
+        text-align: center;
+       margin-top: px;  
+       h4{
+           margin-bottom: -2px;
+           
+       } 
+       a{
+           color: red;
+       }
+      
+    }
+   
 }
+
 
 
 @keyframes textMenu {
 from {background-color: $color-red;}
-to {background-color: yellow;}
+to {background-color:$color-black;}
 }
